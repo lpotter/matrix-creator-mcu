@@ -198,5 +198,5 @@ DESTDIR = $(HOMEDIR)/bin
 
 install: ch.bin 
 
-        install ch.bin $(DESTDIR)
+	install ch.bin $(DESTDIR)
 
