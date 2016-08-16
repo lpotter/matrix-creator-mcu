@@ -193,10 +193,7 @@ ULIBS =
 
 include $(CHIBIOS)/os/ports/GCC/ARMCMx/rules.mk
 
-DESTDIR = $(HOMEDIR)/bin
-
-
 install: ch.bin 
-
+	@test -d $(DESTDIR) || mkdir -p $(DESTDIR)
 	install ch.bin $(DESTDIR)
 
